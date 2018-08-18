@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import * as moment from 'moment';
-import * as readline from 'readline';
 import pad = require('pad');
+import * as readline from 'readline';
 
 export class Logger {
 
