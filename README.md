@@ -12,7 +12,20 @@ What things you need to install the software and how to install them
 
 - MySQL
 
-### Installing
+Create a `.env` file in the project root and fill out following properties
+
+````
+TOKEN=DISCORD-APP-TOKEN
+DEBUG=[no use yet]
+DB_HOST=[Database host]
+DB_USER=[Database user]
+DB_PASS=[Database user's password]
+DB_NAME=[Database name]
+````
+
+Also update the [config](config.js) file with your data.
+
+### Installing & Running
 
 Install all dependencies
 
@@ -25,6 +38,11 @@ Once finished, run the typescript compiler
 ```
 tsc
 ```
+
+Run the application with 
+````
+npm run start
+````
 
 ## Running the tests
 
