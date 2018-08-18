@@ -1,1 +1,1 @@
-INSERT INTO setups.setups (name, roles, time, channelText, channelVoice, channelCategory, totalItems) VALUES (?,?,?,?,?,?,?);
+INSERT INTO setups.setups (name, time, roles, channelText, channelVoice, channelCategory, totalItems) VALUES (?,?,?,?,?,?,?);
