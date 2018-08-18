@@ -11,6 +11,7 @@ Following instruction will give you the ability to run this on your own machine.
 What things you need to install the software and how to install them
 
 - MySQL
+- NodeJS v8.9 or later
 
 Create a `.env` file in the project root and fill out following properties
 
