@@ -57,8 +57,7 @@ There are no tests for this project.
 
 ## Contributing
 
-Please open a pull request.
-
+Please read the [Contribution Guidelines](.github/CONTRIBUTE.md) and submit a pull request.
 
 ## License
 
