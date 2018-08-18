@@ -28,6 +28,9 @@ export default async function add(bot: Client, msg: Message, args: string[]) {
 
     const roleData: IRoleDataSave[] = [];
     roles.forEach((role) => {
+        if (roleData.find((r) => r.name === role.name )) {
+            role.name = `${role.name}_${roleData.filter((r) => r.name === role.name ).length + 1}`;
+        }
         if (role.name !== bot.user.username) {
             roleData.push({
                 name: role.name,
@@ -43,6 +46,9 @@ export default async function add(bot: Client, msg: Message, args: string[]) {
 
     const channelTextData: IChannelTextDataSave[] = [];
     channelsText.forEach((channel) => {
+        if (channelTextData.find((c) => c.name === channel.name )) {
+            channel.name = `${channel.name}_${channelTextData.filter((c) => c.name === channel.name).length + 1}`;
+        }
         channelTextData.push({
             name: channel.name,
             position: channel.position,
@@ -58,6 +64,9 @@ export default async function add(bot: Client, msg: Message, args: string[]) {
 
     const channelVoiceData: IChannelVoiceDataSave[] = [];
     channelsVoice.forEach((channel) => {
+        if (channelVoiceData.find((c) => c.name === channel.name )) {
+            channel.name = `${channel.name}_${channelVoiceData.filter((c) => c.name === channel.name).length + 1}`;
+        }
         channelVoiceData.push({
             name: channel.name,
             parent: channel.parent.name,
@@ -72,6 +81,9 @@ export default async function add(bot: Client, msg: Message, args: string[]) {
 
     const channelCategoryData: IChannelCategoryData[] = [];
     channelsCategory.forEach((channel) => {
+        if (channelCategoryData.find((c) => c.name === channel.name )) {
+            channel.name = `${channel.name}_${channelCategoryData.filter((c) => c.name === channel.name).length + 1}`;
+        }
         channelCategoryData.push({
             name: channel.name,
             id: channel.id,
