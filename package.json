@@ -1,0 +1,26 @@
+{
+  "name": "antisetupbot",
+  "version": "1.0.0",
+  "description": "A bot for automatic Discord Setups",
+  "main": "dist/bot",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "discord.js": "^11.4.2",
+    "dotenv": "^6.0.0",
+    "moment": "^2.22.2",
+    "ms": "^2.1.1",
+    "mysql": "^2.16.0",
+    "pad": "^2.1.0",
+    "typescript": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/mysql": "^2.15.5",
+    "@types/node": "^10.7.1"
+  },
+  "scripts": {
+    "start": "node -r dotenv/config dist/bot dotenv_config_path=.env"
+  },
+  "author": "tiehm <admin@tiehm.me> (https://tiehm.me)",
+  "license": "UNLICENCED"
+}
